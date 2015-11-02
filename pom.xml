@@ -65,6 +65,28 @@
 					</execution>
 				</executions>
 			</plugin>
+			<plugin>
+				<groupId>org.mule.tools.maven</groupId>
+				<artifactId>mule-maven-plugin</artifactId>
+				<version>2.0</version>
+				<configuration>
+					<deploymentType>cloudhub</deploymentType>
+					<muleVersion>3.7.0</muleVersion>               <!-- This is the runtime version as it appears on the CloudHub interface -->
+					<username>citrixdev</username>
+					<password>H00dM@rn1D0!</password>
+					<redeploy>true</redeploy>
+					<environment>DEV</environment>
+				</configuration>
+				<executions>
+					<execution>
+						<id>deploy</id>
+						<phase>deploy</phase>
+						<goals>
+							<goal>deploy</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
 		</plugins>
 	</build>
 
@@ -165,27 +187,27 @@
 			<version>${derby.version}</version>
 		</dependency>
 		<dependency>
-    <groupId>org.apache.activemq</groupId>
-    <artifactId>activemq-client</artifactId>
-    <version>${activemq.version}</version>
-</dependency>
-<dependency>
-    <groupId>org.apache.activemq</groupId>
-    <artifactId>activemq-broker</artifactId>
-    <version>${activemq.version}</version>
-</dependency>
-<dependency>
-    <groupId>org.apache.activemq</groupId>
-    <artifactId>activemq-kahadb-store</artifactId>
-    <version>${activemq.version}</version>
-</dependency>
-	<dependency>
-            <groupId>org.mule.modules</groupId>
-            <artifactId>mule-module-json</artifactId>
-            <version>${mule.version}</version>
-            <scope>provided</scope>
-        </dependency>
-    </dependencies>
+			<groupId>org.apache.activemq</groupId>
+			<artifactId>activemq-client</artifactId>
+			<version>${activemq.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.activemq</groupId>
+			<artifactId>activemq-broker</artifactId>
+			<version>${activemq.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.activemq</groupId>
+			<artifactId>activemq-kahadb-store</artifactId>
+			<version>${activemq.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.mule.modules</groupId>
+			<artifactId>mule-module-json</artifactId>
+			<version>${mule.version}</version>
+			<scope>provided</scope>
+		</dependency>
+	</dependencies>
 
 
 </project>
