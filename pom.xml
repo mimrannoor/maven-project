@@ -71,7 +71,7 @@
 				<version>2.0</version>
 				<configuration>
 					<deploymentType>cloudhub</deploymentType>
-					<muleVersion>3.7.0</muleVersion>               <!-- This is the runtime version as it appears on the CloudHub interface -->
+					<muleVersion>3.7.2</muleVersion>               <!-- This is the runtime version as it appears on the CloudHub interface -->
 					<username>citrixdev</username>
 					<password>H00dM@rn1D0!</password>
 					<redeploy>true</redeploy>
