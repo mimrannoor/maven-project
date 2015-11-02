@@ -76,6 +76,7 @@
 					<password>H00dM@rn1D0!</password>
 					<redeploy>true</redeploy>
 					<environment>DEV</environment>
+					<workerType>Micro</workerType>
 				</configuration>
 				<executions>
 					<execution>
